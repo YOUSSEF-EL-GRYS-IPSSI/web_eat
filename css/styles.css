@@ -1,5 +1,5 @@
 body {
-    background: url(../images/bg.png);
+    background: rgb(32, 31, 31) ;
 }
 .site {
     font-family: 'Holtwood One SC', sans-serif;
@@ -82,4 +82,12 @@ body {
 .img-thumbnail .btn-order:focus {
     color: #fff;
     background-color: #c13c0d;
+}
+
+/*ADMIN*/
+
+.container.admin{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
 }
