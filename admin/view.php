@@ -29,20 +29,9 @@ Database::disconnect();
 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <title>Burger Code</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+
+<?php include_once('../include/header.php');?>
 
 <body>
     <h1 class="text-logo">
@@ -54,21 +43,25 @@ Database::disconnect();
                 <h1><strong>Voir un items </strong></h1>
                 <br>
 
-                <form action="">
-                    <div class="form-group">
-                        <label for="nom">Nom :</label><?= ' ' . $item['name']; ?>
+                <form>
+                    <div>
+                        <label>Nom:</label><?php echo '  ' . $item['name']; ?>
                     </div>
-                    <div class="form-group">
-                        <label for="nom">Description :</label><?= ' ' . $item['description']; ?>
+                    <br>
+                    <div>
+                        <label>Description:</label><?php echo '  ' . $item['description']; ?>
                     </div>
-                    <div class="form-group">
-                        <label for="nom">Prix :</label><?= ' ' . number_format((float)$item['price'], 2, ',', '') . ' €'; ?>
+                    <br>
+                    <div>
+                        <label>Prix:</label><?php echo '  ' . number_format((float)$item['price'], 2, '.', '') . ' €'; ?>
                     </div>
-                    <div class="form-group">
-                        <label for="nom">Categorie :</label><?= ' ' . $item['category']; ?>
+                    <br>
+                    <div>
+                        <label>Catégorie:</label><?php echo '  ' . $item['category']; ?>
                     </div>
-                    <div class="form-group">
-                        <label for="nom">Image :</label><?= ' ' . $item['image']; ?>
+                    <br>
+                    <div>
+                        <label>Image:</label><?php echo '  ' . $item['image']; ?>
                     </div>
                 </form>
                 <br>
@@ -94,8 +87,5 @@ Database::disconnect();
         </div>
     </div>
 
-    <body>
-
-    </body>
-
-</html>
+  
+ <?php include_once('../include/header.php'); ?>
