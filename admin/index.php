@@ -9,7 +9,7 @@ include_once('../include/header.php');
 
 <div class="container admin">
   <div class="row">
-    <h1><strong>Liste des items </strong><a href="admin/insert.php" class="btn btn-success btn-lg"><span class="bi-plus"></span> Ajouter</a></h1>
+    <h1><strong>Liste des items </strong><a href="insert.php" class="btn btn-success btn-lg"><span class="bi-plus"></span> Ajouter</a></h1>
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
